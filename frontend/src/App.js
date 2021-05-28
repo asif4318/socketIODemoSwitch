@@ -13,9 +13,11 @@ function App() {
   }, []);
 
   return (
-    <h3>
-      {response?"The light is on":"The light is off"}
-    </h3>
+    <div>
+      <h3 style={{color: response === true ? "green" : "red"}}>
+        {response?"The light is on":"The light is off"}
+      </h3>
+    </div>
   );
 }
 
